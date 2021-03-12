@@ -6,7 +6,7 @@ Create four files:
 
 mkdir nornir
 1. nano defaults.yml
-++++++++++++++++++++++++++++++
+############################
 ---
 core:
  num_workers: 100 # how many devices can we connect to at a time
@@ -25,6 +25,6 @@ num_workers: 100
 
 
 
-nano groups.yml
-nano hosts.yml
-nano config.yml
+2. nano groups.yml
+3. nano hosts.yml
+4. nano config.yml

@@ -1,0 +1,30 @@
+pip3 install nornir 
+
+to check if it is installed: pip3 freeze
+
+Create four files:
+
+mkdir nornir
+1. nano defaults.yml
+++++++++++++++++++++++++++++++
+---
+core:
+ num_workers: 100 # how many devices can we connect to at a time
+inventory:
+     plugin: SimpleInventory
+     options:
+         host_file: "inventory/hosts.yaml"
+         group_file: "inventory/groups.yaml"
+         defaults_file: "inventory/defaults.yaml"
+ runner:
+     plugin: threaded
+     options:
+
+num_workers: 100
+
+
+
+
+nano groups.yml
+nano hosts.yml
+nano config.yml
